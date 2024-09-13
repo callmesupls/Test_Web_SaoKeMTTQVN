@@ -36,7 +36,7 @@
         }
 
         function reloadDataTable(searchTerm, startDate, endDate) {
-            showLoading(); // Hiển thị lớp phủ
+            showLoading();
 
             $.ajax({
                 url: 'Data/saoke0109-1009.csv',
@@ -80,7 +80,7 @@
                                         [5, 10, 25, 50],
                                     ],
                                     pageLength: 10,
-                                    order: [[2, 'Desc']],
+                                    order: [[0, 'asc']],
                                     columnDefs: [
                                         {
                                             targets: 0,
